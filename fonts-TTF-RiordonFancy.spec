@@ -5,10 +5,10 @@ Version:	2
 Release:	1
 License:	Creative Commons cc-by-nc
 Group:		Fonts
-URL:		http://blogs.gnome.org/tthurman/2008/12/27/riordonfancy-version-2/
-Requires(post,postun):	fontpostinst
 Source0:	http://dorothy.thurman.org.uk/~tthurman/RiordonFancy/RiordonFancy.ttf
 # Source0-md5:	9d7cb93b5678b36f447bb04f2babd5ae
+URL:		http://blogs.gnome.org/tthurman/2008/12/27/riordonfancy-version-2/
+Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
