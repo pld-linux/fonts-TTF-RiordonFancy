@@ -2,12 +2,12 @@ Summary:	RiordonFancy TrueType font
 Summary(pl.UTF-8):	Czcionka TrueType RiordonFancy
 Name:		fonts-TTF-RiordonFancy
 Version:	2
-Release:	1
-License:	Creative Commons cc-by-nc
+Release:	2
+License:	SIL Open Font License
 Group:		Fonts
-Source0:	http://dorothy.thurman.org.uk/~tthurman/RiordonFancy/RiordonFancy.ttf
-# Source0-md5:	9d7cb93b5678b36f447bb04f2babd5ae
-URL:		http://blogs.gnome.org/tthurman/2008/12/27/riordonfancy-version-2/
+Source0:	http://openfontlibrary.org/people/tthurman/tthurman_-_Riordon_Fancy.ttf
+# Source0-md5:	38940c142b4468f1728dfddcdcebdf69
+URL:		http://openfontlibrary.org/media/files/tthurman/354
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,7 +29,7 @@ oraz interrobang.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{ttffontsdir}
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{ttffontsdir}
+install %{SOURCE0} $RPM_BUILD_ROOT%{ttffontsdir}/RiordonFancy.ttf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
