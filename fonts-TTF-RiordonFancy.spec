@@ -1,12 +1,12 @@
 Summary:	RiordonFancy TrueType font
 Summary(pl.UTF-8):	Czcionka TrueType RiordonFancy
 Name:		fonts-TTF-RiordonFancy
-Version:	2
-Release:	2
+Version:	3
+Release:	1
 License:	SIL Open Font License
 Group:		Fonts
 Source0:	http://openfontlibrary.org/people/tthurman/tthurman_-_Riordon_Fancy.ttf
-# Source0-md5:	38940c142b4468f1728dfddcdcebdf69
+# Source0-md5:	92398bb64d1d5e8e87925a8ca9077ca2
 URL:		http://openfontlibrary.org/media/files/tthurman/354
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
@@ -16,11 +16,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 RiordonFancy is a font designed one paper by the ten year old Riordon
-Turner. It contains the whole ASCII set and an interrobang.
+Turner. It contains the whole ASCII set, Polish, Czech, Spanish and
+Portuguese diacritics and an interrobang.
 
 %description -l pl.UTF-8
 RiordonFancy jest czcionką zaprojektowaną na papierze przez
-dziesięcioletnią Riordon Turner. Zawiera kompletny zestaw znaków ASCII
+dziesięcioletnią Riordon Turner. Zawiera kompletny zestaw znaków
+ASCII, polskie, czeskie, hiszpańskie i portugalskie znaki diakrytyczne
 oraz interrobang.
 
 %prep
