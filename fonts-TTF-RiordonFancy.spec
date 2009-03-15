@@ -1,12 +1,12 @@
 Summary:	RiordonFancy TrueType font
 Summary(pl.UTF-8):	Czcionka TrueType RiordonFancy
 Name:		fonts-TTF-RiordonFancy
-Version:	3
+Version:	4
 Release:	1
 License:	SIL Open Font License
 Group:		Fonts
-Source0:	http://openfontlibrary.org/people/tthurman/tthurman_-_Riordon_Fancy.ttf
-# Source0-md5:	92398bb64d1d5e8e87925a8ca9077ca2
+Source0:	http://openfontlibrary.org/people/tthurman/tthurman_-_Riordon_Fancy.zip
+# Source0-md5:	b60772543ccb9bb95d4a6199f0054ef1
 URL:		http://openfontlibrary.org/media/files/tthurman/354
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
@@ -26,12 +26,13 @@ ASCII, polskie, czeskie, hiszpańskie i portugalskie znaki diakrytyczne
 oraz interrobang.
 
 %prep
+%setup -q -c %{name}-%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{ttffontsdir}
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{ttffontsdir}/RiordonFancy.ttf
+install RiordonFancy.ttf $RPM_BUILD_ROOT%{ttffontsdir}/RiordonFancy.ttf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -44,4 +45,5 @@ fontpostinst TTF
 
 %files
 %defattr(644,root,root,755)
+%doc fontlog.txt readme.txt
 %{ttffontsdir}/*.ttf
