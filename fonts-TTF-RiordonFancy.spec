@@ -26,7 +26,7 @@ ASCII, polskie, czeskie, hiszpańskie i portugalskie znaki diakrytyczne
 oraz interrobang.
 
 %prep
-%setup -q -c %{name}-%{version}
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
