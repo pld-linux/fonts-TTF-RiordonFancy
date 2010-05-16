@@ -8,6 +8,7 @@ Group:		Fonts
 Source0:	http://openfontlibrary.org/people/tthurman/tthurman_-_Riordon_Fancy.zip
 # Source0-md5:	b60772543ccb9bb95d4a6199f0054ef1
 URL:		http://openfontlibrary.org/media/files/tthurman/354
+BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
